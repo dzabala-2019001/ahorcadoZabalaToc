@@ -1,19 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <script src="funcion.js"></script>
     <title>Ahorcado</title>
 </head>
-
 <body>
     <header><h1>Ahorcado</h1></header>
     <main>
+       <center><canvas id="mi-canvas"></canvas></center>
+
         <div>
-            <p id="respuesta"></p>
+            <center><p id="palabra_a_adivinar"></p></center>
+            <button id="jugar">Obtener palabra</button>
+            <p id="resultado"></p>
             <div id="letras">
-                <center>
                 <button>a</button>
                 <button>b</button>
                 <button>c</button>
@@ -28,6 +32,7 @@
                 <button>l</button>
                 <button>m</button>
                 <button>n</button>
+                <button>ñ</button>
                 <button>o</button>
                 <button>p</button>
                 <button>q</button>
@@ -40,10 +45,9 @@
                 <button>x</button>
                 <button>y</button>
                 <button>z</button>
-            </center>
             </div>
         </div>
     </main>
+    <script src="jugabilidad.js"></script>
 </body>
-
 </html>
